@@ -16,7 +16,7 @@ function addBookMark(){
   var bookMarkContainer = document.getElementById("right-side");
   var bookMarks = document.createElement("div");
 
-  if (title === '' || url ==='') {
+  if (title === '' || url === '') {
     alert("Enter a website title and url.")
   } else {
   bookMarkContainer.insertBefore(bookMarks, bookMarkContainer.firstChild);
