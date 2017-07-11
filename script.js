@@ -32,3 +32,14 @@ $("div").on("click", ".delete-button", function(e) {
     e.preventDefault();
     $(this).parent().remove();
 });
+
+// $(".read-button").click(function() {
+//   e.preventDefault();
+//   console.log('click');
+//   $(this).toggleClass(".read-button-marked");
+// });
+
+$("div").on("click", ".read-button", function(e) {
+    e.preventDefault();
+    $(this).toggleClass("read-button-marked");
+  });

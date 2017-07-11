@@ -89,8 +89,9 @@ a:hover, .read-button:hover {
   text-decoration-color: #ffc107;
 }
 
-.read-button:active {
-  color: red;
+.read-button-marked {
+  color: #f05a28 !important;
+  font-weight: 800;
 }
 
 .enter-button {
@@ -134,7 +135,7 @@ a:hover, .read-button:hover {
 .header {
   text-align: center;
   font-size: 100%;
-   width: 100%;
+  width: 100%;
 }
 
 
