@@ -89,7 +89,7 @@ a:hover, .read-button:hover {
   text-decoration-color: #ffc107;
 }
 
-.read-button-marked {
+.read {
   color: #f05a28 !important;
   font-weight: 800;
 }

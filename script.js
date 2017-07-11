@@ -41,5 +41,5 @@ $("div").on("click", ".delete-button", function(e) {
 
 $("div").on("click", ".read-button", function(e) {
     e.preventDefault();
-    $(this).toggleClass("read-button-marked");
+    $(this).toggleClass("read");
   });
