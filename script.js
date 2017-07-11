@@ -2,9 +2,6 @@ var inputTitle = document.getElementById("website-title-input");
 var inputUrl = document.getElementById("website-url-input");
 var enterButton = document.getElementById("enter-button");
 
-// var readCardButton = document.querySelectorAll(".read-button");
-// var deleteCardButton = document.querySelectorAll(".delete-button");
-
 enterButton.addEventListener("click", function(event){
   event.preventDefault();
   addBookMark();
@@ -19,6 +16,9 @@ function addBookMark(){
   var bookMarkContainer = document.getElementById("right-side");
   var bookMarks = document.createElement("div");
 
+  if (title === '' || url ==='') {
+    alert("Enter a website title and url.")
+  } else {
   bookMarkContainer.insertBefore(bookMarks, bookMarkContainer.firstChild);
   return bookMarks.innerHTML = `<div class="web-title-cards">
     <h2>${title}</h2><hr>
@@ -26,18 +26,13 @@ function addBookMark(){
     <button class="read-button">Read</button>
     <button class="delete-button">Delete</button>
   </div>`;
+  }
 };
 
 $("div").on("click", ".delete-button", function(e) {
     e.preventDefault();
     $(this).parent().remove();
 });
-
-// $(".read-button").click(function() {
-//   e.preventDefault();
-//   console.log('click');
-//   $(this).toggleClass(".read-button-marked");
-// });
 
 $("div").on("click", ".read-button", function(e) {
     e.preventDefault();
