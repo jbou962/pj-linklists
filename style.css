@@ -12,7 +12,7 @@
   padding: 0;
   font-family: "open sans", sans-serif;
   background-color: #cfd8dc;
-  /*outline: none;*/
+  outline: none;
 }
 
 img {
@@ -58,7 +58,7 @@ hr {
 
 /*LEFT AND RIGHT SIDE*/
 
-.right-side {
+#right-side {
   padding-left: 50%;
   height: 100%;
      /*float: right;*/
