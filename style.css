@@ -32,6 +32,7 @@ input {
   background: #ffffff;
 }
 
+
 h1 {
   background-color: #455a64;
 }
@@ -63,21 +64,20 @@ hr {
   height: 100%;
      /*float: right;*/
 }
-/*@media(min-width:775px){
-  .left-side {
-  width: 100%;
-}*/
-/*@media screen and (min-width: 480px)*/
 
-/*use flex box, not padding left 50% to get card to stack on right side of screen*/
 
 .left-side {
   background-color: #455a64;
   width: 50%;
-  padding: 26% 0% 50% 0%;
   position: fixed;
   height: 100vh;
   top: 0;
+}
+
+#fixer-div {
+  position: absolute;
+  top: 38%; left: 0; bottom: 0; right: 0;
+  background-color: #455a64;
 }
 
 /*BUTTONS*/
@@ -126,13 +126,9 @@ a:hover, .read-button:hover {
 .header {
   text-align: center;
   font-size: 100%;
-  /*display: inline-block;*/
-  width: 100%;
+   width: 100%;
 }
-.header, #website-form-input {
-  /*position: absolute;
-  top: 50%;*/
-}
+
 
 .web-title-cards {
   width: 86%;
