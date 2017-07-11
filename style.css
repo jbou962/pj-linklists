@@ -49,6 +49,7 @@ a {
   color: #607d8b;
   text-decoration: underline;
   text-decoration-color: #f2f4f4;
+  word-break: break-all;
 }
 
 hr {
@@ -149,4 +150,24 @@ a:hover, .read-button:hover {
   border-color: #607d8b;
   border-width: 1px;
   position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .left-side {
+    position: inherit;
+    height: 75px;
+    width: 100%;
+  }
+
+  #fixer-div {
+    top: 42px;
+    height: 200px;
+  }
+
+  #right-side {
+    margin-top: 187px;
+    padding-left: 0%;
+  }
+
 }

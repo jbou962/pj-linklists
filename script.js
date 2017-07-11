@@ -16,13 +16,13 @@ function addBookMark(){
   var bookMarkContainer = document.getElementById("right-side");
   var bookMarks = document.createElement("div");
 
-  if (title === '' || url ==='') {
+  if (title === '' || url === '') {
     alert("Enter a website title and url.")
   } else {
   bookMarkContainer.insertBefore(bookMarks, bookMarkContainer.firstChild);
   return bookMarks.innerHTML = `<div class="web-title-cards">
     <h2>${title}</h2><hr>
-    <a  href="${url}">${url}</a><hr>
+    <a href="${url}">${url}</a><hr>
     <button class="read-button">Read</button>
     <button class="delete-button">Delete</button>
   </div>`;
