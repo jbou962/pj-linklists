@@ -22,7 +22,7 @@ function addBookMark(){
   bookMarkContainer.insertBefore(bookMarks, bookMarkContainer.firstChild);
   return bookMarks.innerHTML = `<div class="web-title-cards">
     <h2>${title}</h2><hr>
-    <a  href="${url}">${url}</a><hr>
+    <a href="${url}" target="_blank">${url}</a><hr>
     <button class="read-button">Read</button>
     <button class="delete-button">Delete</button>
   </div>`;
