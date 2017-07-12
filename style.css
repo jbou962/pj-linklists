@@ -70,6 +70,12 @@ p {
   background-color: inherit;
 }
 
+#read-span, #unread-span {
+  background-color: #455a64;
+}
+
+
+
 /*LEFT AND RIGHT SIDE*/
 
 #right-side {

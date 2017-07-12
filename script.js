@@ -34,6 +34,14 @@ function updateText () {
   var currentCount = document.getElementById("counter-numeric");
   var numItems = $('.web-title-cards').length;
   currentCount.innerText = numItems;
+
+  var readCount = document.getElementById("read-span");
+  var readItems = $('.web-title-cards.card-read').length;
+  readCount.innerText = readItems;
+
+  var unreadCount = document.getElementById("unread-span");
+  var unreadItems = $('.web-title-cards').length;
+  unreadCount.innerText = unreadItems - readItems;
 };
 
 $("div").on("click", ".delete-button", function(e) {
@@ -48,6 +56,7 @@ $("div").on("click", ".read-button", function(e) {
     $(this).parent().toggleClass("card-read");
     $(this).toggleClass("card-read");
     $(this).siblings().toggleClass("card-read");
+    updateText();
   });
 
 $('#website-url-input').on('keyup', function() {
