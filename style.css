@@ -107,6 +107,11 @@ a:hover, .read-button:hover {
   font-weight: 800;
 }
 
+.card-read {
+  background-color: #f2f4f4 !important;
+  text-decoration-color: #cfd8dc !important;
+}
+
 .enter-button {
   width: 101%;
   margin-left: auto;
