@@ -7,6 +7,7 @@ enterButton.addEventListener("click", function(event){
   addBookMark();
   console.log(inputTitle.value);
   console.log(inputUrl.value);
+  updateText();
 });
 
 function addBookMark(){
@@ -26,12 +27,19 @@ function addBookMark(){
     <button class="read-button">Read</button>
     <button class="delete-button">Delete</button>
   </div>`;
-  }
+  };
+};
+
+function updateText () {
+  var currentCount = document.getElementById("counter-numeric");
+  var numItems = $('.web-title-cards').length;
+  currentCount.innerText = numItems;
 };
 
 $("div").on("click", ".delete-button", function(e) {
     e.preventDefault();
     $(this).parent().remove();
+    updateText ();
 });
 
 $("div").on("click", ".read-button", function(e) {
