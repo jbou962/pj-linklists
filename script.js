@@ -54,7 +54,5 @@ $('#website-url-input').on('keyup', function() {
   var input=$(this);
   if
   (input.val().substring(0,0)==''){input.val('http://'+input.val().substring(7));} else {
-    input.val().substring(8)
-    console.log("we made it");
   }
 });
