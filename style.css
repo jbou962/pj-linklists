@@ -28,7 +28,7 @@ form {
 
 input {
   margin: 2% 0%;
-  width: 99.5%;
+  width: 99.9%;
   background: #ffffff;
 }
 
@@ -56,6 +56,18 @@ hr {
   color: #cfd8dc;
   margin-bottom: 1%;
   margin-top: 3%;
+}
+
+p {
+  text-align: center;
+  background-color: #455a64;
+  color: #cfd8dc;
+  padding-top: 1%;
+  font-size: .75em;
+}
+
+#counter-numeric {
+  background-color: inherit;
 }
 
 /*LEFT AND RIGHT SIDE*/
@@ -96,7 +108,7 @@ a:hover, .read-button:hover {
 }
 
 .enter-button {
-  width: 100%;
+  width: 101%;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffc107;
