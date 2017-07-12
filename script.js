@@ -2,8 +2,8 @@ var inputTitle = document.getElementById("website-title-input");
 var inputUrl = document.getElementById("website-url-input");
 var enterButton = document.getElementById("enter-button");
 
-enterButton.addEventListener("click", function(event){
-  event.preventDefault();
+enterButton.addEventListener("click", function(e){
+  e.preventDefault();
   addBookMark();
   console.log(inputTitle.value);
   console.log(inputUrl.value);
@@ -45,4 +45,16 @@ $("div").on("click", ".delete-button", function(e) {
 $("div").on("click", ".read-button", function(e) {
     e.preventDefault();
     $(this).toggleClass("read");
+    $(this).parent().toggleClass("card-read");
+    $(this).toggleClass("card-read");
+    $(this).siblings().toggleClass("card-read");
   });
+
+$('#website-url-input').on('keyup', function() {
+  var input=$(this);
+  if
+  (input.val().substring(0,0)==''){input.val('http://'+input.val().substring(7));} else {
+    input.val().substring(8)
+    console.log("we made it");
+  }
+});
