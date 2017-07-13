@@ -16,20 +16,24 @@
 }
 
 img {
-  width: 87%;
-  /*height: 10%;*/
+  width: 95%;
+  padding-bottom: 4%;
+  background-color: #455a64;
 }
 
 form {
-  width: 80%;
+  width: 90%;
   margin: auto;
   background-color: #455a64;
 }
 
 input {
-  margin: 2% 0%;
-  width: 99.9%;
+  margin-top: 2%;
+  width: 98%;
   background: #ffffff;
+  margin-bottom: 4%;
+  padding-left: 2%;
+  font-size: 250%;
 }
 
 
@@ -63,7 +67,8 @@ p {
   background-color: #455a64;
   color: #cfd8dc;
   padding-top: 1%;
-  font-size: .75em;
+  font-size: 1.2em;
+
 }
 
 #counter-numeric {
@@ -95,7 +100,7 @@ p {
 
 #fixer-div {
   position: absolute;
-  top: 38%; left: 0; bottom: 0; right: 0;
+  top: 25%;  left: 0; bottom: 0; right: 0;
   background-color: #455a64;
 }
 
@@ -126,8 +131,10 @@ a:hover, .read-button:hover {
   border: none;
   color: #ffffff;
   font-weight: 800;
-  padding: 2.5%;
+  font-size: 150%;
+  padding: 1.5%;
   margin-top: 2%;
+
 }
 
 .enter-button:hover {
@@ -175,21 +182,67 @@ a:hover, .read-button:hover {
   position: relative;
 }
 
+@media only screen and (max-width: 810px) {
+
+  input {
+    font-size: 150%;
+  }
+
+  .enter-button {
+    font-size: 80%;
+  }
+
+  /*look into this, maybe min-width*/
+
 @media only screen and (max-width: 500px) {
 
   .left-side {
-    position: inherit;
+    position: fixed;
+    z-index: 1;
     height: 75px;
     width: 100%;
   }
 
+  img {
+    padding-bottom: 0%;
+    width: 60%;
+  }
+
+  input {
+    font-size: initial;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
   #fixer-div {
-    top: 42px;
-    height: 200px;
+    top: 15px;
+    height: 240px;
+    padding-bottom: 10%;
   }
 
   #right-side {
-    margin-top: 187px;
+    margin-top: 320px;
+    padding-left: 0%;
+  }
+
+  .enter-button {
+    font-size: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  #fixer-div {
+    top: 15px;
+    height: 220px;
+    padding-bottom: 10%;
+  }
+
+  #right-side {
+    margin-top: 275px;
     padding-left: 0%;
   }
 
