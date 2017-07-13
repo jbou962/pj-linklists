@@ -1,9 +1,13 @@
 /*TABLE OF CONTENTS*/
 
 /*HTML ELEMENTS*/
-/*LEFT AND RIGHT SIDE*/
+/*LEFT, RIGHT, FIXER*/
 /*BUTTONS*/
-/*HEADER AND CARDS*/
+/*:HOVER STATES*/
+/*HEADER AND CARDS
+/*COUNTERS*/
+/*MEDIA QUERIES*/
+
 
 /*HTML ELEMENTS*/
 
@@ -67,8 +71,9 @@ p {
   color: #cfd8dc;
   padding-top: 1%;
   font-size: 1.2em;
-
 }
+
+/*COUNTERS*/
 
 #counter-numeric {
   background-color: inherit;
@@ -78,16 +83,12 @@ p {
   background-color: #455a64;
 }
 
-
-
-/*LEFT AND RIGHT SIDE*/
+/*LEFT, RIGHT, FIXER*/
 
 #right-side {
   padding-left: 50%;
   height: 100%;
-     /*float: right;*/
 }
-
 
 .left-side {
   background-color: #455a64;
@@ -104,13 +105,6 @@ p {
 }
 
 /*BUTTONS*/
-
-a:hover, .read-button:hover {
-  font-weight: 800;
-  color: #455a64;
-  text-decoration: underline;
-  text-decoration-color: #ffc107;
-}
 
 .read {
   color: #f05a28 !important;
@@ -136,10 +130,6 @@ a:hover, .read-button:hover {
 
 }
 
-.enter-button:hover {
-  background-color: #ffd773;
-}
-
 .read-button, .delete-button {
   background-color: #ffffff;
   border: none;
@@ -160,6 +150,19 @@ a:hover, .read-button:hover {
   bottom: 5%;
 }
 
+/*:HOVER STATES*/
+
+.enter-button:hover {
+  background-color: #ffd773;
+}
+
+a:hover, .read-button:hover {
+  font-weight: 800;
+  color: #455a64;
+  text-decoration: underline;
+  text-decoration-color: #ffc107;
+}
+
 /*HEADER AND CARDS*/
 
 .header {
@@ -167,7 +170,6 @@ a:hover, .read-button:hover {
   font-size: 100%;
   width: 100%;
 }
-
 
 .web-title-cards {
   width: 86%;
@@ -180,6 +182,8 @@ a:hover, .read-button:hover {
   border-width: 1px;
   position: relative;
 }
+
+/*MEDIA QUERIES*/
 
 @media only screen and (max-width: 880px) {
 
@@ -194,8 +198,6 @@ a:hover, .read-button:hover {
   .web-title-cards {
     padding: 1% 3% 6% 3%;
   }
-
-  /*look into this, maybe min-width*/
 
 @media only screen and (max-width: 500px) {
 
