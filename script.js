@@ -5,8 +5,6 @@ var enterButton = document.getElementById("enter-button");
 enterButton.addEventListener("click", function(e){
   e.preventDefault();
   addBookMark();
-  console.log(inputTitle.value);
-  console.log(inputUrl.value);
   updateText();
 });
 
@@ -64,4 +62,9 @@ $('#website-url-input').on('focus', function() {
   if
   (input.val().substring(0,0)==''){input.val('http://'+input.val().substring(7));} else {
   }
+});
+
+$("#read-counter").on("click", function(){
+  $(".card-read").remove();
+  updateText();
 });
