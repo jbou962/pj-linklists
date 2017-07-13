@@ -59,7 +59,7 @@ $("div").on("click", ".read-button", function(e) {
     updateText();
   });
 
-$('#website-url-input').on('keyup', function() {
+$('#website-url-input').on('focus', function() {
   var input=$(this);
   if
   (input.val().substring(0,0)==''){input.val('http://'+input.val().substring(7));} else {
