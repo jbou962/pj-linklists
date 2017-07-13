@@ -36,7 +36,6 @@ input {
   font-size: 250%;
 }
 
-
 h1 {
   background-color: #455a64;
 }
@@ -58,7 +57,7 @@ a {
 
 hr {
   color: #cfd8dc;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   margin-top: 3%;
 }
 
@@ -174,7 +173,7 @@ a:hover, .read-button:hover {
   width: 86%;
   height: 20%;
   border: solid;
-  padding: 1% 3% 6% 3%;
+  padding: 1% 3% 3% 3%;
   margin: 3% 1% 1% 4%;
   background-color: white;
   border-color: #607d8b;
@@ -182,7 +181,7 @@ a:hover, .read-button:hover {
   position: relative;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 880px) {
 
   input {
     font-size: 150%;
@@ -190,6 +189,10 @@ a:hover, .read-button:hover {
 
   .enter-button {
     font-size: 80%;
+  }
+
+  .web-title-cards {
+    padding: 1% 3% 6% 3%;
   }
 
   /*look into this, maybe min-width*/
@@ -231,6 +234,10 @@ a:hover, .read-button:hover {
     font-size: 90%;
   }
 
+  .web-title-cards {
+    padding: 1% 3% 6% 3%;
+  }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -244,6 +251,10 @@ a:hover, .read-button:hover {
   #right-side {
     margin-top: 275px;
     padding-left: 0%;
+  }
+
+  .web-title-cards {
+    padding: 1% 3% 6% 3%;
   }
 
 }
