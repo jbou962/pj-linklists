@@ -83,6 +83,11 @@ p {
   background-color: #455a64;
 }
 
+#read-counter:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /*LEFT, RIGHT, FIXER*/
 
 #right-side {
